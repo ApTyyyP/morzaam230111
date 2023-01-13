@@ -64,15 +64,16 @@
 }
 
 .btn {
-  padding: 5px 15px;
+  padding: 5px 10px;
   display: inline-block;
   vertical-align: middle;
-  color: #070f22;
+  color: #4d5a6b;
   background-color: #ffffff;
   text-align: center;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
   border: 1px solid transparent;
   border-radius: 8px;
   border-color: #e7eaf0;
@@ -85,8 +86,8 @@
 
 .btn:hover {
   color: #ffffff;
-  background-color: #070f22;
-  border-color: #070f22;
+  background-color: #4d5a6b;
+  border-color: #4d5a6b;
 }
 
 .btn-view {
@@ -94,18 +95,18 @@
 
 .btn-view-all {
   margin: 15px 10px 15px 15px;
-  padding: 8px 15px;
-  color: #010a1e;
-  font-weight: 700;
+  padding: 10px 15px;
+  color: #1c2335;
+}
+
+.btn-view-all:hover {
+  color: #ffffff;
+  background-color: #1c2335;
+  border-color: #1c2335;
 }
 
 img {
   max-width: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-button {
-  -webkit-appearance: button;
 }
