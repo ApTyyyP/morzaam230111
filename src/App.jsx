@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './components/Modal/Modal';
 import InitData from './initData.json';
+import Profile from './Profile';
 
 import './App.css';
 
@@ -16,18 +17,12 @@ const App = () => {
           return (
             <div className="card-inner">
               <div className="card-info">
-                {/* <div className="card-img"> */}
                 <div className="card-info-img">
                   <img src={photoUrl + item.photo} alt={item.photo} />
                 </div>
-                {/* </div> */}
                 <div className="card-info-name">
                   <div className="userName">{item.name}</div>
-                  {/* <div>{item.position}</div> */}
                   <div className="userNickName">{item.nickname}</div>
-                  {/* <p>Phone {item.phone}</p>
-                <p>URL http://example.com</p>
-                <p>Email {item.email}</p> */}
                 </div>
               </div>
               <button
@@ -37,16 +32,7 @@ const App = () => {
                 View
               </button>
               <Modal active={modalActive} setActive={setModalActive}>
-                <div className="card-inner">
-                  <div className="card-info">
-                    {/* <img src={photoUrl + item.photo} alt={item.photo} /> */}
-                    <div className="userName">{item.name}</div>
-                    <div>{item.position}</div>
-                    <p>Phone {item.phone}</p>
-                    <p>URL http://example.com</p>
-                    <p>Email {item.email}</p>
-                  </div>
-                </div>
+                <Profile item={item} photoUrl={photoUrl} />
               </Modal>
             </div>
           );
