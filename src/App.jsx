@@ -5,8 +5,6 @@ import Profile from './Profile';
 
 import './App.css';
 
-const photoUrl = './foto/';
-
 const App = () => {
   const [modalActive, setModalActive] = useState(false);
 
@@ -18,7 +16,7 @@ const App = () => {
             <div className="card-inner">
               <div className="card-info">
                 <div className="card-info-img">
-                  <img src={photoUrl + item.photo} alt={item.photo} />
+                  <img src={"./foto/" + item.photo} alt={item.photo} />
                 </div>
                 <div className="card-info-name">
                   <div className="userName">{item.name}</div>
@@ -32,7 +30,7 @@ const App = () => {
                 View
               </button>
               <Modal active={modalActive} setActive={setModalActive}>
-                <Profile item={item} photoUrl={photoUrl} />
+                <Profile item={item} />
               </Modal>
             </div>
           );

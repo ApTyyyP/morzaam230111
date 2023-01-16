@@ -30,3 +30,37 @@
 .modal__content.active {
   transform: scale(1);
 }
+
+.modal__card-inner {
+  padding: 15px 10px 15px 15px;
+}
+
+.modal__card-info {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal__card-info-user {
+  text-align: center;
+}
+
+.modal__card-info-user img {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+table {
+  border-spacing: 0 15px;
+}
+
+th {
+  width: 70px;
+  text-align: left;
+}
